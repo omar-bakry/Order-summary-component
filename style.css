@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 html{
-    font-family: 'Red Hat Display', sans-serif;
+
 }
 body{
+    font-family: 'Red Hat Display', sans-serif;
     background:no-repeat url(./images/pattern-background-desktop.svg);
     background-size: 100% auto;
     background-color:  hsl(225, 100%, 94%);
-
 }
-* {
-    margin: 0;
-    padding: 0;
-
-}
-.w{
+section{
     width: 400px;
     background-color: white;
     margin: 70px auto;
@@ -25,16 +21,16 @@ body{
 .img2{
     width: 100%;
 }
-h5{
-    margin: 0px 80px;
+.mid {
+    padding: 15px 30px;
 }
-.plan{
-  
+.mid > p{
+  color:hsl(224, 23%, 55%);
 }
 .plan h3 ,p {
     margin: 3px 15px;
 }
-.hdjgh{
+.price{
     position: relative;
     display: flex;
     align-items: center;
@@ -43,36 +39,48 @@ h5{
     margin: 15px 15px;
     padding: 20px;
 }
-.hdjgh > p {
+.change {
+    cursor: pointer;
+}
+.price > p {
     position: absolute;
     right: 10px;
     top: 35px;
 }
-.hdjgh > p:hover{
+.price > p:hover{
     /* color: hsl(250, 100%, 70%); */
     color: hsl(245, 75%, 52%);
 }
-.hdjgh img {
+.price img {
     width: 50px;
     height: 50px;
 }
+section > p {
+    color:hsl(224, 23%, 55%);
+}
 button{
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     width: 90%;
+    font-weight: 600;
     margin: auto;
     color: #fff;
-    border-radius: 6px ;
+    border-radius: 8px ;
     background-color: hsl(245, 75%, 52%);
 }
 button:hover{
     opacity: 0.6;
     box-shadow: 0px 10px 15px -5px blueviolet;
 }
-.hh{
-    margin: 40px;
+.cancel{
+    display: block;
+    margin: 30px;
     color: gray;
+    cursor: pointer;
+}
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
 }
 .kil{
     color: #808080;
